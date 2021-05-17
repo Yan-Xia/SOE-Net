@@ -2,11 +2,11 @@
 
 # SOE-Net: A Self-Attention and Orientation Encoding Networkfor Point Cloud based Place Recognition (CVPR 2021 Oral) 
 
-This repository is the official implementation for paper 
+This repository is the official implementation for paper: 
 
 SOE-Net: A Self-Attention and Orientation Encoding Network for Point Cloud based Place Recognition
 
-Yan Xia, Yusheng Xu, Shuang Li, Rui Wang, Juan Du, Daniel Cremers, Uwe Stilla
+[Yan Xia](https://scholar.google.com.hk/citations?user=xkBn4mMAAAAJ&hl=en), [Yusheng Xu,](https://scholar.google.com.hk/citations?user=U1xaKegAAAAJ&hl=en) [Shuang Li](https://scholar.google.com/citations?user=VXCiAc4AAAAJ&hl=en), [Rui Wang](https://scholar.google.com.hk/citations?user=buN3yw8AAAAJ&hl=en), [Juan Du](), [Daniel Cremers](https://scholar.google.com.hk/citations?user=cXQciMEAAAAJ&hl=en), [Uwe Stilla](https://scholar.google.com.hk/citations?user=M3beNHEAAAAJ&hl=en)
 
 Technical University of Munich, Beijing Insitute of Technology, Artisense
 
@@ -57,7 +57,7 @@ The pre-trained models for both the baseline and refinement networks can be down
 
 ------
 
-The code is in part built on [PointNetVLAD](https://github.com/mikacuy/pointnetvlad) and [PCAN](https://github.com/XLechter/PCAN).
+The code is in heavily built on [PointNetVLAD](https://github.com/mikacuy/pointnetvlad). We also borrow something from [PointSIFT](https://github.com/MVIG-SJTU/pointSIFT).
 
 #### Citation
 
