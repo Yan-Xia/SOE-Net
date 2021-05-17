@@ -1,6 +1,6 @@
 
 
-# SOE-Net: A Self-Attention and Orientation Encoding Networkfor Point Cloud based Place Recognition (CVPR 2021 Oral) 
+# SOE-Net: A Self-Attention and Orientation Encoding Network for Point Cloud based Place Recognition (CVPR 2021 Oral) 
 
 This repository is the official implementation for paper: 
 
