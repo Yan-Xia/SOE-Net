@@ -8,7 +8,7 @@ import os
 import sys
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 sys.path.append(BASE_DIR)
-from pcan_cls import *
+from soe import *
 from loading_pointclouds import *
 from sklearn.neighbors import NearestNeighbors
 from sklearn.neighbors import KDTree
@@ -20,7 +20,7 @@ os.environ["CUDA_VISIBLE_DEVICES"] = str(0)
 #params
 parser = argparse.ArgumentParser()
 parser.add_argument('--gpu', type=int, default=0, help='GPU to use [default: GPU 1]')
-parser.add_argument('--log_dir', default='/data/ge24kog/log/S0E-Net/', help='Log dir [default: log]')
+parser.add_argument('--log_dir', default='/data/xiayan/log/S0E-Net/', help='Log dir [default: log]')
 parser.add_argument('--positives_per_query', type=int, default=2, help='Number of potential positives in each training tuple [default: 2]')
 parser.add_argument('--negatives_per_query', type=int, default=8, help='Number of definite negatives in each training tuple [default: 18]')
 parser.add_argument('--max_epoch', type=int, default=20, help='Epoch to run [default: 20]')
@@ -47,8 +47,8 @@ DECAY_STEP = FLAGS.decay_step
 DECAY_RATE = FLAGS.decay_rate
 MARGIN = FLAGS.margin
 
-TRAIN_FILE = '/home/ge24kog/generating_queries/training_queries_baseline.pickle'
-TEST_FILE = '/home/ge24kog/generating_queries/test_queries_baseline.pickle'
+TRAIN_FILE = '/home/xiayan/generating_queries/training_queries_baseline.pickle'
+TEST_FILE = '/home/xiayan/generating_queries/test_queries_baseline.pickle'
 
 LOG_DIR = FLAGS.log_dir
 if not os.path.exists(LOG_DIR): os.mkdir(LOG_DIR)

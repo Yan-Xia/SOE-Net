@@ -8,7 +8,7 @@ import os
 import sys
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 sys.path.append(BASE_DIR)
-from pcan_cls import *
+from soe import *
 from loading_pointclouds import *
 from sklearn.neighbors import NearestNeighbors
 from sklearn.neighbors import KDTree
@@ -25,7 +25,7 @@ parser.add_argument('--decay_step', type=int, default=200000, help='Decay step f
 parser.add_argument('--decay_rate', type=float, default=0.7, help='Decay rate for lr decay [default: 0.8]')
 parser.add_argument('--model_file', default='model19_18001.ckpt', help='Log dir [default: log]')
 parser.add_argument('--dataset', default='oxford', help='Log dir [default: log]')
-parser.add_argument('--logdir', default='/data/ge24kog/log/', help='Log dir [default: log]')
+parser.add_argument('--logdir', default='/data/xiayan/log/', help='Log dir [default: log]')
 FLAGS = parser.parse_args()
 RESULTS_FOLDER="results/"
 
@@ -48,8 +48,8 @@ if not os.path.exists(RESULTS_FOLDER): os.mkdir(RESULTS_FOLDER)
 
 NUMBER_NEIBORS = 25
 
-DATABASE_FILE= '/home/ge24kog/generating_queries/'+ dataset +'_evaluation_database.pickle'
-QUERY_FILE= '/home/ge24kog/generating_queries/' + dataset + '_evaluation_query.pickle'
+DATABASE_FILE= '/home/xiayan/generating_queries/'+ dataset +'_evaluation_database.pickle'
+QUERY_FILE= '/home/xiayan/generating_queries/' + dataset + '_evaluation_query.pickle'
 
 
 output_file= RESULTS_FOLDER +'baseline_results_'+dataset+'_'+model_file+'.txt'

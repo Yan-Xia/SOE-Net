@@ -3,7 +3,7 @@ import pickle
 import numpy as np
 import random
 
-BASE_PATH = "/data/ge24kog/benchmark_datasets/"
+BASE_PATH = "/data/xiayan/benchmark_datasets/"
 print(BASE_PATH)
 
 def get_queries_dict(filename):
