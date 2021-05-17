@@ -1,4 +1,7 @@
-# SOE-Net: A Self-Attention and Orientation Encoding Networkfor Point Cloud based Place Recognition 
+
+
+# SOE-Net: A Self-Attention and Orientation Encoding Networkfor Point Cloud based Place Recognition (CVPR 2021 Oral) 
+
 This repository is the official implementation for paper 
 
 SOE-Net: A Self-Attention and Orientation Encoding Network for Point Cloud based Place Recognition
@@ -12,6 +15,8 @@ Technical University of Munich, Beijing Insitute of Technology, Artisense
 ------
 
 SOE-Net fully explores the relationship between points and incorporates long-range context into point-wise local descriptors. Local information of each point from eight orientations is captured in a PointOE module, whereas long-range feature dependencies among local descriptors are captured with a self-attention unit. Moreover, we propose a novel loss function called Hard Positive Hard Negative quadruplet loss (HPHN quadruplet), that achieves better performance than the commonly used lazy quadruplet loss.
+
+![image-20210517154249689](/Users/xyan/object-detection/imgs/image-20210517154249689.png)
 
 #### Pre-requisites
 
@@ -46,12 +51,29 @@ python evaluate.py
 
 ------
 
+The pre-trained models for both the baseline and refinement networks can be downloaded [here](https://drive.google.com/drive/folders/1D8w0exzX0nH18lgx7w2Mv4ghBpTD5lYJ?usp=sharing).
+
 #### Acknowledgement
 
 ------
 
-The code is in part built on PointNetVLAD and PCAN.
+The code is in part built on [PointNetVLAD](https://github.com/mikacuy/pointnetvlad) and [PCAN](https://github.com/XLechter/PCAN).
 
 #### Citation
 
 ------
+
+If you find our work useful in your research, please consider citing:
+
+```
+@inproceedings{yan2021soe,
+ author = {Y. Xia and Y. Xu and S. Li and R. Wang and J. Du and D. Cremers and U. Stilla},
+ title = {SOE-Net: A Self-Attention and Orientation Encoding Network for Point Cloud based Place Recognition},
+ booktitle = {IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+ year = {2021},
+ award = {Oral Presentation},
+}
+```
+
+
+
