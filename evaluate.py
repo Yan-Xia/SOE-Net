@@ -25,7 +25,7 @@ parser.add_argument('--decay_step', type=int, default=200000, help='Decay step f
 parser.add_argument('--decay_rate', type=float, default=0.7, help='Decay rate for lr decay [default: 0.8]')
 parser.add_argument('--model_file', default='model19_18001.ckpt', help='Log dir [default: log]')
 parser.add_argument('--dataset', default='oxford', help='Log dir [default: log]')
-parser.add_argument('--logdir', default='/data/xiayan/log/', help='Log dir [default: log]')
+parser.add_argument('--logdir', default='./tf_log/baseline_network/', help='Log dir [default: log]')
 FLAGS = parser.parse_args()
 RESULTS_FOLDER="results/"
 
