@@ -16,7 +16,7 @@ Technical University of Munich, Beijing Insitute of Technology, Artisense
 
 SOE-Net fully explores the relationship between points and incorporates long-range context into point-wise local descriptors. Local information of each point from eight orientations is captured in a PointOE module, whereas long-range feature dependencies among local descriptors are captured with a self-attention unit. Moreover, we propose a novel loss function called Hard Positive Hard Negative quadruplet loss (HPHN quadruplet), that achieves better performance than the commonly used lazy quadruplet loss.
 
-![image-20210517154249689](/Users/xyan/object-detection/imgs/image-20210517154249689.png)
+![image-20210517154249689](./Figures/SOE-Net.png)
 
 #### Pre-requisites
 
