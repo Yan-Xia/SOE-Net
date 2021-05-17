@@ -66,7 +66,7 @@ The code is in heavily built on [PointNetVLAD](https://github.com/mikacuy/pointn
 If you find our work useful in your research, please consider citing:
 
 ```
-@inproceedings{yan2021soe,
+@inproceedings{xia2021soe,
  author = {Y. Xia and Y. Xu and S. Li and R. Wang and J. Du and D. Cremers and U. Stilla},
  title = {SOE-Net: A Self-Attention and Orientation Encoding Network for Point Cloud based Place Recognition},
  booktitle = {IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
