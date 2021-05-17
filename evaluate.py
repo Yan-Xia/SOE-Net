@@ -53,6 +53,7 @@ QUERY_FILE= '/home/xiayan/generating_queries/' + dataset + '_evaluation_query.pi
 
 
 output_file= RESULTS_FOLDER +'baseline_results_'+dataset+'_'+model_file+'.txt'
+# output_file= RESULTS_FOLDER +'refinement_results_'+dataset+'_'+model_file+'.txt'
 
 DATABASE_SETS= get_sets_dict(DATABASE_FILE)
 QUERY_SETS= get_sets_dict(QUERY_FILE)
